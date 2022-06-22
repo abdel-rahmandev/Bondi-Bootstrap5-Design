@@ -93,6 +93,48 @@ body {
 .service h3 {
   color: var(--orange);
 }
+
+/* Portfolio */
+#portfolio {
+  background-color: var(--light-color);
+}
+.cats li {
+  padding: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cats li.active {
+  color: var(--orange);
+  background-color: var(--red);
+  padding: 0.5rem 1rem;
+}
+.cats li:not(.active):hover {
+  color: var(--red);
+}
+#portfolio .project {
+  position: relative;
+  border: 5px solid #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+#portfolio .project::before {
+  content: attr(data-proj);
+  position: absolute;
+  background-color: rgb(51 209 204 / 80%);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transform: translateX(-101%);
+  transition: var(--trans);
+}
+#portfolio .project:hover::before {
+  transform: translateX(0);
+}
 /* Media Queries */
 @media (max-width: 992px) {
   .search {
