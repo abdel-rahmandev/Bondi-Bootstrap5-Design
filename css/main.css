@@ -135,6 +135,12 @@ body {
 #portfolio .project:hover::before {
   transform: translateX(0);
 }
+
+/* About Section */
+#about .description {
+  width: 60%;
+  max-width: 100%;
+}
 /* Media Queries */
 @media (max-width: 992px) {
   .search {
