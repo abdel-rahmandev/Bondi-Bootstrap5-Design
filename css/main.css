@@ -157,6 +157,10 @@ body {
 #techs .row {
   gap: 20px 0px;
 }
+/* Contact */
+#contact {
+  background-color: var(--dark-blue);
+}
 /* Media Queries */
 @media (max-width: 992px) {
   .search {
