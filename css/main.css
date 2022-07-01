@@ -155,10 +155,41 @@ body {
 
 /* Techs */
 #techs .row {
-  gap: 20px 0px;
+  gap: 1rem 0;
 }
 /* Contact */
 #contact {
+  background-color: var(--dark-blue);
+}
+/* Subscribe */
+#subscribe {
+  background-color: var(--orange);
+}
+#subscribe .row {
+  gap: 1rem 0;
+}
+#email {
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 1px solid #fff !important;
+}
+#email::placeholder {
+  color: #fff;
+}
+#email:focus {
+  outline: none;
+  background-color: transparent;
+}
+input[type="submit"] {
+  color: var(--orange);
+  background-color: var(--dark-blue);
+  font-weight: bold;
+  padding: 0.8rem 3rem;
+  transition: var(--trans);
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  color: var(--orange);
   background-color: var(--dark-blue);
 }
 /* Media Queries */
