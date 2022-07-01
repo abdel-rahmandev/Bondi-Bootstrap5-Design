@@ -192,6 +192,36 @@ input[type="submit"]:focus {
   color: var(--orange);
   background-color: var(--dark-blue);
 }
+/* Footer */
+#footer {
+  background-color: var(--dark-blue);
+}
+#footer .row {
+  gap: 1rem 0;
+}
+#footer .copyright span {
+  color: var(--dark-cyan);
+}
+#footer .copy-text span {
+  color: var(--orange);
+}
+#footer .social svg {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+#footer .facebook {
+  background-color: #1877f2;
+}
+#footer .twitter {
+  background-color: #1da1f2;
+}
+#footer .youtube {
+  background-color: #ff0000;
+}
+#footer .linkedin {
+  background-color: #0077b5;
+}
 /* Media Queries */
 @media (max-width: 992px) {
   .search {
